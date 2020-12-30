@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Page: Don't Panic</title>
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/main.css">
-</head>
+{% include head.html %}
 <body>
+  {% include header.html %}
   <div class="full-hero hero-home">
     <h1>I'm an h1</h1>
     <ul class="social-list">
@@ -23,8 +18,7 @@
     </ul>
   </div>
 
-  <h2>I'm an h2</h2>
-  <!--test elements-->
+  <!-- test elements
   <div class="test-box">
     200px wide
   </div>
@@ -34,7 +28,16 @@
   <div class="test-box test-box-nonsizing test-box-sizing">
     200px wide + border + padding + box-sizing: border-box = 200px
   </div>
-  <!-- end -->
+  end -->
+
+  <h2>THE FOUNDERS</h2>
+  <p>
+    Learn Enough to Be Dangerous was founded in 2015 by Michael Hartl, Lee Donahoe, and Nick Merwin. We believe that the kind of technical sophistication taught by the Learn Enough tutorials can benefit at least a billion people, and probably more.
+  </p>
+  <p>
+    Test paragraph.
+  </p>
+
   <div class="bio-wrapper">
     <div class="bio-box">
       <img src="https://placekitten.com/g/400/400" alt="Kitten">
